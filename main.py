@@ -6,7 +6,7 @@ from aiogram.utils import executor
 
 
 
-from boto3.s3.connection import S3Connection
+from boto3 import S3Connection
 bot = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
 dp = Dispatcher(bot)
 
